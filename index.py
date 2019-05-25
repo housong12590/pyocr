@@ -2,6 +2,12 @@ from PIL import ImageGrab
 import base64
 from io import BytesIO
 
+import win32clipboard as w
+import win32con
+
+import pyperclip
+from ctypes import *
+
 
 def image_to_base64():
     img = ImageGrab.grabclipboard()
